@@ -15,7 +15,7 @@ module "www_s3_static_site" {
   name = "www"
   domain_name = var.domain_name
   s3_website_endpoint_route53_hosted_zone_id = var.s3_website_endpoint_route53_hosted_zone_id
-  virginia_acm_arn = module.acm.acm_virginia_arn
+  virginia_acm_arn = var.acm_virginia_arn
 }
 
 ```
