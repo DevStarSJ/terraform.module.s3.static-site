@@ -16,10 +16,10 @@ resource "aws_cloudfront_distribution" "default" {
     }
   }
 
-  aliases = ["${var.name}.${var.domain_name}", var.domain_name]
+  aliases = ["${var.name}.${var.domain_name}"]
 
   enabled             = true
-  is_ipv6_enabled     = true
+  is_ipv6_enabled     = false
   default_root_object = "index.html"
 
   default_cache_behavior {
